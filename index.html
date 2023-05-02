@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Awsome Books</title>
+  </head>
+  <body>
+
+    <!-- Header -->
+
+    <header>
+      <nav id="navbar" class="navbar">
+        <div class="logoBox"><a class="logo" href="#">Awesome Books</a></div>
+        <ul class="flex-row navbarList">
+          <li><a class="linkList" href="#">List</a></li>
+          <li><a class="linkAdd" href="#">Add new</a></li>
+          <li><a class="linkContact" href="#">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="date"></div>
+    </header>
+
+    <!-- Book list section -->
+
+    <div id="bookList">
+      <h1 class="headline">Your awesome books</h1>
+      <section class="view-books">
+        <article class="books"></article>
+      </section>
+    </div>
+
+    <!-- Add book Form -->
+
+    <form id="form" class="form">
+      <article class="new-book">
+        <h3>Add a new book</h3>
+
+        <div class="input">
+          <input id="new-title" name="title" placeholder="Title" />
+          <span id="empty-title" class="empty"></span>
+          <br />
+          <input id="new-author" name="author" placeholder="Author" />
+          <span id="empty-author" class="empty"></span>
+        </div>
+        <div class="added">
+          <p class="success-before"></p>
+          <button id="add-book" class="add-book" type="submit">Add</button>
+        </div>
+      </article>
+    </form>
+
+    <!-- Contact section -->
+
+    <section id="contact" class="contact">
+      <h2>Contact information</h2>
+      <div class="contact-info">
+        <p>
+          If you have any question or you want to say Hello?<br />
+          You can reach out to us!
+        </p>
+        <ul class="info">
+          <li class="contact-email">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="2em"
+              height="2em"
+              viewBox="0 0 24 24"
+              class="bounce"
+            >
+              <path
+                fill="#64ffdb"
+                d="M5.856 6.84a.75.75 0 0 0-1.106.66V17a.75.75 0 0 0 1.5 0V8.756l5.394 2.904c.222.12.49.12.712 0l5.394-2.904V17a.75.75 0 0 0 1.5 0V7.5a.75.75 0 0 0-1.106-.66L12 10.148L5.856 6.84Z"
+              />
+              <path
+                fill="#64ffdb"
+                fill-rule="evenodd"
+                d="M17.31 3.722a59.632 59.632 0 0 0-10.62 0l-1.518.135a3.53 3.53 0 0 0-3.179 3.006a35.508 35.508 0 0 0 0 10.274a3.53 3.53 0 0 0 3.18 3.005l1.516.136c3.534.316 7.088.316 10.622 0l1.517-.136a3.53 3.53 0 0 0 3.179-3.005a35.508 35.508 0 0 0 0-10.274a3.53 3.53 0 0 0-3.18-3.006l-1.516-.135ZM6.824 5.216a58.133 58.133 0 0 1 10.354 0l1.517.136a2.03 2.03 0 0 1 1.829 1.728a34.005 34.005 0 0 1 0 9.84a2.03 2.03 0 0 1-1.829 1.728l-1.517.136c-3.444.308-6.91.308-10.354 0l-1.517-.136a2.03 2.03 0 0 1-1.829-1.728a34.008 34.008 0 0 1 0-9.84a2.03 2.03 0 0 1 1.829-1.728l1.517-.136Z"
+                clip-rule="evenodd"
+              />
+            </svg>
+            <p>otmaneechchafyky5@gmail.com</p>
+          </li>
+          <li class="contact-number">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="2em"
+              height="2em"
+              viewBox="0 0 24 24"
+              class="bounce"
+            >
+              <path
+                fill="#64ffdb"
+                d="M2 21q-.825 0-1.413-.588T0 19V5q0-.825.588-1.413T2 3h20q.825 0 1.413.588T24 5v14q0 .825-.588 1.413T22 21H2Zm13.9-2H22V5H2v14h.1q1.05-1.875 2.9-2.938T9 15q2.15 0 4 1.063T15.9 19ZM9 14q1.25 0 2.125-.875T12 11q0-1.25-.875-2.125T9 8q-1.25 0-2.125.875T6 11q0 1.25.875 2.125T9 14Zm10 4l2-2l-1.5-2h-1.65q-.15-.45-.25-.963T17.5 12q0-.525.1-1.012t.25-.988h1.65L21 8l-2-2q-1.35 1.05-2.175 2.663T16 12q0 1.725.825 3.338T19 18ZM4.55 19h8.9q-.85-.95-2.013-1.475T9 17q-1.275 0-2.425.525T4.55 19ZM9 12q-.425 0-.713-.288T8 11q0-.425.288-.713T9 10q.425 0 .713.288T10 11q0 .425-.288.713T9 12Zm3 0Z"
+              />
+            </svg>
+            <p>+212622394044</p>
+          </li>
+          <li class="contact-address">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="2.3em"
+              height="2.3em"
+              viewBox="0 0 24 24"
+              class="bounce"
+            >
+              <path
+                fill="#64ffdb"
+                d="M12 6.5A2.5 2.5 0 0 1 14.5 9a2.5 2.5 0 0 1-2.5 2.5A2.5 2.5 0 0 1 9.5 9A2.5 2.5 0 0 1 12 6.5M12 2a7 7 0 0 1 7 7c0 5.25-7 13-7 13S5 14.25 5 9a7 7 0 0 1 7-7m0 2a5 5 0 0 0-5 5c0 1 0 3 5 9.71C17 12 17 10 17 9a5 5 0 0 0-5-5Z"
+              />
+            </svg>
+            <p>Microstreet 73, 8797 CaMo, Africa</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Footer -->
+
+    <footer>
+      <p>
+        Built by
+        <a
+          href="https://www.linkedin.com/in/otmane-echchafyky-125801248/"
+          target="_blank"
+          rel="noopener"
+          >Otmane Echchafyky</a
+        >
+      </p>
+      <a href="https://github.com/echchafykyotmane/Portfolio/fork" class="fork">
+        <p>Git fork the code from here</p>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+        >
+          <g
+            fill="none"
+            stroke="currentColor"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+          >
+            <circle cx="12" cy="18" r="3" />
+            <circle cx="6" cy="6" r="3" />
+            <circle cx="18" cy="6" r="3" />
+            <path d="M18 9v1a2 2 0 0 1-2 2H8a2 2 0 0 1-2-2V9m6 3v3" />
+          </g>
+        </svg>
+      </a>
+    </footer>
+    <script src="script.js"></script>
+    <!-- <script src="book.js" type="module"></script> -->
+   <!--  <script src="./modules/select.js" type="module"></script>
+    <script src="./modules/bookList.js" type="module"></script> -->
+  </body>
+</html>

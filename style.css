@@ -1,0 +1,355 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&family=Trispace:wght@100;300;400;500;600;700;800&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Space Mono', sans-serif;
+  background: #0a192f;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* Header and Navbar */
+
+header {
+  display: flex;
+  height: 7rem;
+  flex-direction: column;
+  margin-bottom: 3rem;
+}
+
+header div .logo {
+  font-size: 1.2rem;
+  font-weight: 700;
+  border: 2px solid #8892b0;
+  color: #64ffdb;
+  padding: 0.6rem;
+}
+
+header nav {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 5%;
+}
+
+header nav ul {
+  width: 60%;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  gap: 5rem;
+}
+
+header nav ul li {
+  width: 15%;
+  border: 2px solid transparent;
+  transition: ease 0.3s;
+  padding: 5px 0;
+  display: flex;
+  align-items: center;
+}
+
+footer p a {
+  color: #64ffdb;
+}
+
+header nav ul li a {
+  font-size: 1rem;
+  color: #8892b0;
+  padding: 5px;
+  transition: ease 0.3s;
+  width: 100%;
+  text-align: center;
+}
+
+header nav ul li:hover {
+  border: 2px solid #64ffdb;
+}
+
+header nav ul li:hover a {
+  color: #64ffdb;
+}
+
+header .date {
+  align-self: self-end;
+  margin-right: 5rem;
+  font-size: 0.8rem;
+  background: #495670;
+  padding: 5px;
+  border-radius: 4px;
+  color: #fff;
+}
+
+/* Add book */
+
+form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.new-book {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  width: 60%;
+}
+
+.new-book h3 {
+  font-size: 2rem;
+  color: #ffffffef;
+}
+
+.new-book .input {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+  width: 100%;
+}
+
+.new-book .input input {
+  width: 100%;
+  height: 3rem;
+  padding: 10px 5%;
+  background: #ffffffef;
+  border: 0;
+  border-radius: 10px;
+  font-size: 1.2rem;
+}
+
+.new-book .input input:focus {
+  outline: transparent;
+  color: #0a192f;
+}
+
+.new-book .add-book {
+  width: 20%;
+  height: 3rem;
+  padding: 10px 5%;
+  background: #64ffdb;
+  color: #0a192f;
+  border: 2px solid transparent;
+  border-radius: 10px;
+  font-size: 1.2rem;
+  font-weight: 600;
+  align-self: self-end;
+  cursor: pointer;
+  transition: ease-in-out 0.17s;
+}
+
+.new-book .add-book:hover {
+  border-color: #64ffdb;
+  color: #64ffdb;
+  background: transparent;
+}
+
+.empty {
+  color: red;
+  font-size: 0.8rem;
+  height: 1rem;
+}
+
+.added {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.added .success-after {
+  padding: 1rem;
+  background-color: #28a745;
+  color: #fff;
+  border-radius: 5px;
+}
+
+/* footer */
+
+footer {
+  font-family: 'Space Mono', sans-serif;
+  color: #ffffffe0;
+  height: 5rem;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 5px;
+  justify-content: center;
+  gap: 10%;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+}
+
+footer .fork {
+  display: flex;
+  color: #ffffff9a;
+  gap: 15px;
+  transition: ease-out 0.3s;
+}
+
+footer .fork:hover {
+  color: #fff;
+}
+
+/* contact */
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.contact h2 {
+  font-size: 2rem;
+  color: #ffffffef;
+}
+
+.contact .contact-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3rem;
+}
+
+.contact .contact-info > p {
+  color: #8892b0;
+  text-align: center;
+  line-height: 1.5rem;
+}
+
+.contact .contact-info ul {
+  display: flex;
+  gap: 1rem;
+}
+
+.contact .contact-info ul li {
+  display: flex;
+  flex-direction: column;
+  font-size: 1.2rem;
+  align-items: center;
+  gap: 1.5rem;
+  border-right: 3px solid #64ffdb;
+  padding: 0 4rem;
+  color: #8892b0;
+  transition: 0.15s ease-in-out;
+}
+
+.contact .contact-info ul .contact-address {
+  border-right-color: transparent;
+}
+
+.contact .contact-info ul li:hover .bounce {
+  animation: bounce 0.8s linear infinite;
+}
+
+.contact .contact-info ul li:hover {
+  color: #fff;
+}
+
+/* list */
+
+#bookList {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  overflow-y: scroll;
+}
+
+/* Scroll styles */
+
+#bookList::-webkit-scrollbar {
+  width: 3px;
+  border-radius: 50%;
+}
+
+#bookList::-webkit-scrollbar-track {
+  background-color: #495670;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #8892b0;
+}
+
+#bookList h1 {
+  font-size: 2rem;
+  color: #ffffffef;
+}
+
+#bookList .view-books {
+  display: flex;
+  flex-direction: column;
+  height: 19rem;
+  gap: 2rem;
+  width: 80%;
+}
+
+#bookList .view-books .books {
+  display: flex;
+  flex-direction: column;
+}
+
+#bookList .view-books .books .book-info {
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+  justify-content: space-between;
+  gap: 10%;
+}
+
+#bookList .view-books .books .book-info p,
+span {
+  color: #ffffffda;
+  background: transparent;
+}
+
+#bookList .view-books .books .book-info:nth-child(even) {
+  background-color: #8892b080;
+}
+
+#bookList .view-books .books .book-info:nth-child(odd) {
+  border: 2px solid #8892b080;
+}
+
+#bookList .view-books .books .book-info .remove-book {
+  padding: 0.7rem 1rem;
+  color: #fff;
+  background-color: #dc3545;
+  border: 2px solid #dc3545;
+  border-radius: 5px;
+  font-size: 1.03rem;
+  font-weight: 500;
+  transition: 0.2s ease-in-out;
+  cursor: pointer;
+}
+
+#bookList .view-books .books .book-info .remove-book:hover {
+  padding: 0.7rem 1rem;
+  color: #dc3545;
+  background-color: #fff;
+  border: 2px solid #fff;
+}
+
+@keyframes bounce {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-10px);
+  }
+}

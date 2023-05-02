@@ -27,7 +27,7 @@ After you're finished please remove all the comments and instructions!
 <h3 align="center"><b>Hi Visitor, you are welcome</b></h3>
 <div align="center">
   <!-- You are encouraged to replace this logo with your own! Otherwise you can also remove it. -->
-  <img src="./Assets/pf-logo.png" alt="logo" />
+  <img src="./assets/pf-logo.png" alt="logo" />
   <br/>
 
 </div>
@@ -137,7 +137,7 @@ Example command:
 
 Clone this repository to your desired folder:
 - cd my-folder
-- git clone https://github.com/otmaneechchafyky/Awesome-books-ES6.git
+- git clone https://github.com/otmaneechchafyky/Awsome-books.git
 
 <!--
 Example commands:
@@ -227,7 +227,7 @@ Example:
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](https://github.com/otmaneechchafyky/Awesome-books-ES6/issues)
+Feel free to check the [issues page](https://github.com/otmaneechchafyky/Awsome-books/issues)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
